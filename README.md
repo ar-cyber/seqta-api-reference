@@ -58,7 +58,7 @@ Response is in JSON format
 - SAML might not be present in any query. As no JSON is provided, the simple login cannot be shown here.
 - The ID is more important then the usercode. Accessing stuff is dependent on it
 
-### POST `/load/settings`
+### <code style="background-color: orangered">POST</code> `/load/settings`
 Load the settings for a user. This might be missing data as it is most of the time different between instances.<br>
 *__No request body is needed for this endpoint__*
 #### Response
@@ -153,3 +153,5 @@ Returns JSON
   }
   ```
 - Schools that do not use shittygenic will have to use other ways; this only covers synergetic-based systems
+
+# Brought to you by SockyCat.net and the BetterSEQTA team!!! 
