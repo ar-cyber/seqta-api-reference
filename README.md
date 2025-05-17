@@ -1,14 +1,14 @@
-> [!IMPORTANT]
-> By using this program, you agree that you will not use these APIs maliciously. We are not responsible for any damages
+
+# By using this program, you agree that you will not use these APIs maliciously. We are not responsible for any damages
 # SEQTA Learn API Reference
 A reference for some undocumented APIs<br>
 **Base URL:** `/seqta/student`
-> [!IMPORTANT]
-> All endpoints need the `JSESSIONID` cookie
+
+## All endpoints need the `JSESSIONID` cookie
 ## General APIs
 ### `POST` `/login`
-> [!CAUTION]
-> This endpoint requires the `_ga` cookies to be passed
+
+*__This endpoint requires the `_ga` cookies to be passed__*
 
 Log in to SEQTA. This is the endpoint after you log in and a `JSESSIONID` token is generated.
 #### Request
@@ -55,13 +55,12 @@ Response is in JSON format
   "status": "200"
 }
 ```
-- SAML might not be present in any query. As no JSON is provided, the simple login cannot be shown here.<br>
+- SAML might not be present in any query. As no JSON is provided, the simple login cannot be shown here.
 - The ID is more important then the usercode. Accessing stuff is dependent on it
 
 ### `POST` `/load/settings`
-Load the settings for a user. This might be missing data as it is most of the time different between instances.
-> [!NOTE]
-> No request body is needed for this endpoint
+Load the settings for a user. This might be missing data as it is most of the time different between instances.<br>
+*__No request body is needed for this endpoint__*
 #### Response
 Returns JSON
 ##### Response format (do not rely on; can be different)
