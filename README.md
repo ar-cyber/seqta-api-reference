@@ -6,7 +6,7 @@ A reference for some undocumented APIs<br>
 
 ## All endpoints need the `JSESSIONID` cookie
 ## General APIs
-### POST `/login`
+### <code style="background-color: orangered">POST</code> `/login`
 
 *__This endpoint requires the `_ga` cookies to be passed__*
 
