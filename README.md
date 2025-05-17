@@ -61,6 +61,7 @@ Response is in JSON format
 - The ID is more important then the usercode. Accessing stuff is dependent on it
 </details>
 <details>
+
 <summary><code style="background-color: orangered">POST</code> <code>/load/settings?</code></summary>
 
 Load the settings for a user. This might be missing data as it is most of the time different between instances.<br>
