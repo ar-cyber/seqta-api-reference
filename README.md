@@ -6,7 +6,9 @@ A reference for some undocumented APIs<br>
 
 ## All endpoints need the `JSESSIONID` cookie
 ## General APIs
-### <code style="background-color: orangered">POST</code> `/login`
+<details>
+  
+<summary><code style="background-color: orangered">POST</code> <code>/login</code></summary>
 
 *__This endpoint requires the `_ga` cookies to be passed__*
 
@@ -57,8 +59,10 @@ Response is in JSON format
 ```
 - SAML might not be present in any query. As no JSON is provided, the simple login cannot be shown here.
 - The ID is more important then the usercode. Accessing stuff is dependent on it
+</details>
+<details>
+<summary><code style="background-color: orangered">POST</code> <code>/load/settings?</code></summary>
 
-### <code style="background-color: orangered">POST</code> `/load/settings`
 Load the settings for a user. This might be missing data as it is most of the time different between instances.<br>
 *__No request body is needed for this endpoint__*
 #### Response
@@ -155,3 +159,4 @@ Returns JSON
 - Schools that do not use shittygenic will have to use other ways; this only covers synergetic-based systems
 
 # Brought to you by SockyCat.net and the BetterSEQTA team!!! 
+</details>
